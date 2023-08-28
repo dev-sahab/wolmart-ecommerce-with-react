@@ -7,7 +7,7 @@ const Header = () => {
   const location = useLocation();
   return (
     <>
-      <header className="header">
+      <header className={`header ${location.pathname !== "/" ? "header-border" : ""}`}>
         <div className="header-top">
           <div className="container">
             <div className="header-left">
